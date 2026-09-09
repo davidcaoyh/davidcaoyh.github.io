@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuhao (David) Cao</title>
+<meta name="description" content="Yuhao (David) Cao — MEng in Electrical and Computer Engineering at the University of Toronto. Multi-agent LLM systems and machine learning.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>y</text></svg>">
+<style>
+:root{
+  --bg:#fdfdfc; --fg:#1b1b19; --muted:#5c5c57; --faint:#8a8a83;
+  --rule:#e6e5e0; --accent:#0f6f6a; --accent-soft:#0f6f6a14; --live:#1f9d55;
+  --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#131412; --fg:#e9e7e2; --muted:#a8a79f; --faint:#7d7c75;
+    --rule:#2b2c28; --accent:#5cc3b3; --accent-soft:#5cc3b31f; --live:#43c47c;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--bg); color:var(--fg);
+  font-family:var(--sans); font-size:17px; line-height:1.68; -webkit-font-smoothing:antialiased}
+.wrap{max-width:41rem; margin:0 auto; padding:4.5rem 1.4rem 6rem}
+a{color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-soft)}
+a:hover{border-bottom-color:currentColor}
+p{margin:0 0 1.05rem}
+
+.top{display:flex; gap:1.5rem; align-items:center; margin-bottom:2.3rem}
+.avatar{width:104px; height:104px; border-radius:50%; object-fit:cover; flex:none;
+  background:var(--accent-soft); border:1px solid var(--rule)}
+h1{font-family:var(--serif); font-size:2rem; font-weight:600; letter-spacing:-.015em;
+  margin:0 0 .3rem; line-height:1.2}
+.role{color:var(--muted); margin:0; font-size:1rem; line-height:1.5}
+@media (max-width:32rem){
+  .wrap{padding-top:2.8rem}
+  .top{flex-direction:column; align-items:flex-start; gap:1.1rem}
+  h1{font-size:1.7rem}
+  body{font-size:16.5px}
+}
+
+.bio{font-size:1.02rem}
+.bio p:last-child{margin-bottom:0}
+
+section{margin-top:3rem; padding-top:2rem; border-top:1px solid var(--rule)}
+h2{font-family:var(--sans); font-size:.73rem; font-weight:600; text-transform:uppercase;
+  letter-spacing:.11em; color:var(--faint); margin:0 0 1.5rem}
+
+.work{margin-bottom:2.5rem}
+.work:last-child{margin-bottom:0}
+.work h3{font-family:var(--serif); font-size:1.22rem; font-weight:600; margin:0 0 .4rem; line-height:1.32}
+.work h3 a{border-bottom:none; color:var(--fg)}
+.work h3 a:hover{color:var(--accent)}
+.work p{margin-bottom:.7rem}
+.byline{font-size:.92rem; color:var(--faint); margin-bottom:.75rem}
+.figures{font-family:var(--mono); font-size:.82rem; color:var(--muted);
+  background:var(--accent-soft); border-radius:4px; padding:.55rem .8rem; margin:0 0 .8rem;
+  line-height:1.8}
+.acts{display:flex; flex-wrap:wrap; gap:.55rem; align-items:center; font-size:.9rem}
+.acts a{border:1px solid var(--rule); border-radius:100px; padding:.24rem .8rem; color:var(--muted)}
+.acts a:hover{border-color:var(--accent); color:var(--accent)}
+.acts a.live{display:inline-flex; align-items:center; gap:.42rem; color:var(--fg);
+  font-weight:600; background:var(--accent-soft); padding-left:.62rem}
+.dot{width:.48rem; height:.48rem; border-radius:50%; background:var(--live); flex:none;
+  animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--live) 55%,transparent)}
+  70%{box-shadow:0 0 0 .48rem transparent} 100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+
+.cvrow{display:grid; grid-template-columns:6.6rem 1fr; gap:.1rem 1.3rem; margin-bottom:1.15rem}
+.cvrow:last-child{margin-bottom:0}
+.cvrow .when{font-family:var(--mono); font-size:.82rem; color:var(--faint); padding-top:.3rem}
+.cvrow strong{font-weight:600}
+.cvrow .where{color:var(--muted); font-size:.95rem}
+@media (max-width:32rem){ .cvrow{grid-template-columns:1fr; gap:.1rem} .cvrow .when{padding-top:0} }
+
+footer{margin-top:3.2rem; padding-top:1.7rem; border-top:1px solid var(--rule);
+  font-size:.94rem; color:var(--faint); display:flex; flex-wrap:wrap; gap:0 .2rem}
+footer a{color:var(--muted); border-bottom:none}
+footer a:hover{color:var(--accent)}
+footer span[aria-hidden]{padding:0 .55rem; color:var(--rule)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+  <img class="avatar" src="me.jpg" alt="Yuhao Cao" onerror="this.remove()">
+  <div>
+    <h1>Yuhao (David) Cao</h1>
+    <p class="role">MEng in Electrical &amp; Computer Engineering, University of Toronto. Consultant at Deloitte.</p>
+  </div>
+</div>
+
+<div class="bio">
+  <p>I am an MEng student in Electrical and Computer Engineering at the University of Toronto, where my coursework and projects are in machine learning and multi-agent LLM systems. I have been a consultant at Deloitte since 2021, working on Adobe content management and customer data platform solutions. Before Toronto I studied computer science at McGill.</p>
+</div>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="work">
+    <h3><a href="https://ai-village.yuhaocao.com/">AI Village</a></h3>
+    <p class="byline">Independent project, Summer 2026</p>
+    <p>A continuously running multi-agent LLM system. Four models from four providers share a workspace and a chat channel and are given a research question to work on together. The agent runtime is a function-calling loop over OpenRouter with a nine-tool dispatcher spanning web search, HTTP fetch, DOI resolution, sandboxed file I/O, inter-agent chat and turn control.</p>
+    <p>A FastAPI service over a SQLite event log records every model call, tool call and token cost, which makes any session replayable turn by turn. Each agent has its own persona, and the run ends on a unanimous commitment-vote termination protocol rather than a judge model. Deployed on a DigitalOcean droplet.</p>
+    <div class="acts">
+      <a class="live" href="https://ai-village.yuhaocao.com/"><span class="dot" aria-hidden="true"></span>Watch it live</a>
+      <a href="https://github.com/davidcaoyh/ai-village">Code</a>
+    </div>
+  </div>
+
+  <div class="work">
+    <h3><a href="rag-paper.pdf">Does Multimodal Retrieval Reduce Hallucination in News Summarization?</a></h3>
+    <p class="byline">A Text-vs-Pixel RAG Study · ECE 1508, Deep Generative Models · Summer 2026</p>
+    <p>A dual-encoder multimodal RAG pipeline over 1,023 BBC News article–image pairs: SBERT for passages, CLIP for images, both in FAISS, with the two scores combined at a weight tuned on a held-out split. The evaluation harness uses an LLM judge that breaks each summary into atomic claims and checks text and image support separately, scored with paired bootstrap tests.</p>
+    <p>The ablation was designed to isolate whether multimodality reduces hallucination rather than retrieval in general. The gain comes from retrieval alone: claims supported by retrieved evidence rose from 15% to 86%, while both pre-registered multimodal steps were null.</p>
+    <div class="figures">1,023 pairs · retrieval +0.59 paired · captions +0.019 (p = 0.64) · pixels +0.025 (p = 0.10)</div>
+    <div class="acts">
+      <a href="rag-paper.pdf">Paper</a>
+      <a href="https://github.com/davidcaoyh/multimodal-news-rag">Code</a>
+    </div>
+  </div>
+
+  <div class="work">
+    <h3><a href="traffic-paper.pdf">Short-Term Urban Traffic Speed Prediction</a></h3>
+    <p class="byline">ECE 1513, Introduction to Machine Learning · group project, NeurIPS-format report · Winter 2026</p>
+    <p>Merged 2.1M Toronto road-sensor records over 1,947 segments with hourly Environment Canada weather into 1.58M time-aligned rows and 45 features, then benchmarked six models against naive baselines for 15-minute speed prediction.</p>
+    <p>Feature engineering cut MAE by 16–23% across tree, distance and neural families; hyperparameter tuning added under 0.5%. XGBoost delivered MAE 3.180 km/h and R² 0.781 — 24.4% over the persistence baseline, on par with a ResNet-style MLP at three times faster training.</p>
+    <div class="figures">2.1M records · 1,947 segments · 1.58M rows · 45 features · MAE 3.180 km/h · R² 0.781</div>
+    <div class="acts">
+      <a href="traffic-paper.pdf">Report</a>
+      <a href="https://github.com/davidcaoyh/ECE1513ML">Code</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Background</h2>
+  <div class="cvrow">
+    <div class="when">2025 – 2028</div>
+    <div><strong>MEng, Electrical &amp; Computer Engineering</strong><div class="where">University of Toronto</div></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">2021 – now</div>
+    <div><strong>Consultant, Deloitte</strong><div class="where">Adobe content management and customer data platform solutions</div></div>
+  </div>
+  <div class="cvrow">
+    <div class="when">2017 – 2021</div>
+    <div><strong>BSc, Computer Science</strong><div class="where">McGill University · Hugh Brock Scholarship</div></div>
+  </div>
+</section>
+
+<footer>
+  <a href="cv.pdf">CV</a><span aria-hidden="true">·</span>
+  <a href="mailto:davidyh.cao@mail.utoronto.ca">davidyh.cao@mail.utoronto.ca</a><span aria-hidden="true">·</span>
+  <a href="https://github.com/davidcaoyh">GitHub</a><span aria-hidden="true">·</span>
+  <a href="https://linkedin.com/in/yuhao-cao">LinkedIn</a><span aria-hidden="true">·</span>
+  <span>Toronto</span>
+</footer>
+
+</div>
+</body>
+</html>
